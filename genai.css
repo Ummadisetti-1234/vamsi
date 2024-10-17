@@ -1,0 +1,288 @@
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+  
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #023047; /* Dark modern background */
+    padding: 1rem 0;
+ /* Soft shadow for depth */
+}
+
+
+
+header .logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+   
+}
+
+nav ul li {
+    position: relative;
+    display:inline-block;
+    margin-left:20px;
+}
+
+nav ul li a {
+    color: #fff; /* White color for contrast */
+    
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #374151;
+    border-radius:5px /* Darker shade for hover */
+}
+
+/* Select Dropdown Styles */
+nav select {
+    background-color:#374151; /* Light background */
+    color: #fff; /* Dark text color */
+  
+    padding: 10px 20px;
+   
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav select:hover {
+    background-color:rgb(116, 222, 225);
+    color:white; /* Lighter hover background */
+}
+
+nav option {
+    padding: 10px;
+    color: black; /* Dark color for options */
+}
+
+
+
+/* Main content styles */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.content-box {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.content-box h2 {
+    margin-top: 0;
+    color: #190d86;
+}
+
+.content-box p,
+.content-box ul {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.content-box ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+header {
+    background: #160d69;
+    color: #fff;
+    padding: 0.25rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    height: 120px;
+    width: 180px;
+    
+}
+
+header .container {
+    display: flex;
+    font-family: Roboto, Roboto-fallback, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 60px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #04d9ff;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #190d86;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    float: none;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: #04d9ff;
+}
+#gen-ai {
+    padding: 20px 0;
+}
+
+#gen-ai .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#gen-ai h2 {
+    font-size: 2em;
+    
+}
+
+#gen-ai p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+    text-align: center;
+}
+
+#gen-ai ul {
+    list-style-type: disc;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    
+}
+
+/* Footer styles */
+footer {
+    background-color: #190d86;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #04d9ff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .container, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
+}

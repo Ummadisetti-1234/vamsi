@@ -1,0 +1,197 @@
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    /* Container */
+    .container {
+        width: 80%;
+      
+        margin: 0 auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Header Styling */
+    header {
+        background-color: #023047; /* Dark modern background */
+        padding: 1rem 0;
+     /* Soft shadow for depth */
+    }
+    
+    
+    
+    header .logo {
+        width: 150px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+       
+    }
+    
+    nav ul li {
+        position: relative;
+        display:inline-block;
+        margin-left:20px;
+    }
+    
+    nav ul li a {
+        color: #fff; /* White color for contrast */
+        
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    
+    nav ul li a:hover {
+        background-color: #374151;
+        border-radius:5px /* Darker shade for hover */
+    }
+    
+    /* Select Dropdown Styles */
+    nav select {
+        background-color:#374151; /* Light background */
+        color: #fff; /* Dark text color */
+      
+        padding: 10px 20px;
+       
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    nav select:hover {
+        background-color:rgb(116, 222, 225);
+        color:white; /* Lighter hover background */
+    }
+    
+    nav option {
+        padding: 10px;
+        color: black; /* Dark color for options */
+    }
+    
+
+/* Main Section */
+main {
+    padding: 20px 0;
+}
+
+#about {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.about-box h3 {
+    font-size: 1.5rem;
+    color: #190d86;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #0077ff, #00c6ff); /* Gradient background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff; /* White text */
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em; /* Responsive font size */
+    }
+
+    .hero p {
+        font-size: 1em; /* Responsive paragraph size */
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        background: rgba(0, 0, 0, 0.8); /* Dark background for dropdown */
+        width: 100%;
+        display: none; /* Hidden by default */
+        padding: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show when toggled */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .video-section {
+        grid-template-columns: 1fr; /* Stack videos on small screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
